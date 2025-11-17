@@ -25,8 +25,8 @@ with st.sidebar:
 # --------------------------------------------------------
 # Model paths
 # --------------------------------------------------------
-RECON_MODEL_PATH = "models/best_fista_unet.pt"
-YOLO_MODEL_PATH = "models/best.pt"
+RECON_MODEL_PATH = "best_fista_unet.pt"
+YOLO_MODEL_PATH = "best.pt"
 
 # --------------------------------------------------------
 # Load grayscale
@@ -253,3 +253,4 @@ if "recons" in st.session_state:
             bio = io.BytesIO()
             _, buf = cv2.imencode(".png", draw)
             st.download_button("Download Detection", buf.tobytes(), "detection.png")
+
