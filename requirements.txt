@@ -1,0 +1,7 @@
+streamlit>=1.20
+torch>=1.13          # or the version you used for training
+opencv-python
+numpy
+Pillow
+ultralytics>=8.0.0
+matplotlib
